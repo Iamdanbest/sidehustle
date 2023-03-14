@@ -10,22 +10,39 @@
             }
              body{
                 position: relative;
+                background-color: aqua;
              }
-            div{
+            .container{
                 position: absolute;
                 padding: 30px;
                 margin: 30px;
-                max-width: 250px;
+                width:40%;
                 top:60px;
-                right:40%;
+                right:30%;
                 border: 5px solid lightslategrey;
+                background-color: blueviolet;
             }
-            
+           .container input[type=email], input[type=name], input[type=number], input[type=password] {
+                width: 100%;
+                padding:5px;
+                margin: 5px 0 22px 0;
+           }
+           label{
+            color:yellow;
+            font-size: 20px;
+           }
+           span{
+            margin-left:40px;
+           }
+           button{
+            padding: 10px;
+            font-size: 20px;
+           }
         </style>
     </head>
     <body>
-        <div>
-        <form action="">
+        <div class="container">
+        <form action="mailto:atofolakidaniel15@gmail.com" method="post" enctype="text/plain">
             <label for="fname">FULLNAME</label>
             <input type="name" name="fname" required><br>
 
@@ -36,9 +53,9 @@
             <input type="number" required><br>
 
             <label for="male">MALE</label>
-            <input type="radio" name="gender" value="male" required>
-            <label for="male">FEMALE</label>
-            <input type="radio" name="gender" value="female" required><br>
+            <input type="radio" name="gender" value="male" required><span></span>
+            <label for="male">FEMALE</label> 
+            <input type="radio" name="gender" value="female" required><br><br>
 
             <label for="password">PASSWORD</label>
             <input type="password" required><br>
